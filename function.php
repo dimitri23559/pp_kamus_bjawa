@@ -4,6 +4,7 @@ $conn = mysqli_connect("localhost", "root", "", "tranlate");
 function query($query) {
 	global $conn;
 	$result = mysqli_query($conn, $query);
+    	// $result = mysqli_query($conn, "SELECT * FROM penerjemah ");
 
 	$rows = [];
 	while( $row = mysqli_fetch_assoc($result) ) {

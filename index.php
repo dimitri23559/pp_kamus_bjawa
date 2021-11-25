@@ -2,7 +2,7 @@
 require 'function.php';
 
 
-$bahasa = mysqli_query($conn, "SELECT * FROM berita");
+$bahasa = query($conn, "SELECT * FROM berita");
 
 // require 'function.php';
 
@@ -50,7 +50,7 @@ if( isset($_POST["cari"])) {
         <th bgcolor="#42A5F5" colspan="7">krama</th>
         <th bgcolor="#2196F3" colspan="7">ngoko</th>
     </tr>
-    <?php foreach( $bahasa as $row ) : ?>
+    <?php  foreach( $bahasa as $row ) : ?>
     <tr>
         <td bgcolor="" colspan=""><?= $row["id"]; ?></td>
         <td bgcolor="" colspan="7"><?= $row["krama"]; ?></td>
