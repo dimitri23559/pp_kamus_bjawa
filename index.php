@@ -2,12 +2,12 @@
 require 'function.php';
 
 
-$bahasa = query($conn, "SELECT * FROM berita");
+// $bahasa = query($conn, "SELECT * FROM tranlate");
 
 // require 'function.php';
 
 
-// $bahasa = mysqli_query($conn, "SELECT * FROM tranlate ORDER BY DESC");
+$bahasa = mysqli_query($conn, "SELECT * FROM tranlate ");
 
 if( isset($_POST["cari"])) {
     $bahasa = cari($_POST["keyword"]);

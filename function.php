@@ -26,7 +26,9 @@ function query($query) {
 
 function cari($keyword)
 {
-    $query = "SELECT * FROM penerjemah 
+    $query = "SELECT * FROM 
+	
+	penerjemah 
                 WHERE
                 id LIKE '%$keyword%' OR
                 krama LIKE '%$keyword%' OR
